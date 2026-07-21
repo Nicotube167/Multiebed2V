@@ -12,11 +12,11 @@ public class BedHomes extends JavaPlugin {
                 this
         );
 
-        getLogger().info("BedHomes has been enabled!");
-    }
+        getServer().getPluginManager().registerEvents(
+                new NameListener(),
+                this
+        );
 
-    @Override
-    public void onDisable() {
-        getLogger().info("BedHomes has been disabled!");
+        getLogger().info("BedHomes enabled!");
     }
 }
