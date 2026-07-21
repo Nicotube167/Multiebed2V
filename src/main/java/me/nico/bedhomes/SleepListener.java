@@ -22,6 +22,6 @@ public class SleepListener implements Listener {
 
         beds.put(player.getUniqueId(), bed);
 
-        player.sendMessage("§aYour bed has been saved!");
+        NameListener.requestName(player, bed);
     }
 }
