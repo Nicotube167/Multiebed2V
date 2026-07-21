@@ -24,3 +24,7 @@ getServer().getPluginManager().registerEvents(
         new DeathListener(),
         this
 );
+getServer().getPluginManager().registerEvents(
+        new GUIListener(),
+        this
+);
