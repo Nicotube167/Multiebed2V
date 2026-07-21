@@ -6,6 +6,12 @@ public class BedHomes extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
+        getServer().getPluginManager().registerEvents(
+                new SleepListener(),
+                this
+        );
+
         getLogger().info("BedHomes has been enabled!");
     }
 
