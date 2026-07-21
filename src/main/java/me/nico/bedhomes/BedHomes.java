@@ -20,3 +20,7 @@ public class BedHomes extends JavaPlugin {
         getLogger().info("BedHomes enabled!");
     }
 }
+getServer().getPluginManager().registerEvents(
+        new DeathListener(),
+        this
+);
