@@ -1,0 +1,14 @@
+name: BedHomes
+version: 1.0
+main: me.nico.bedhomes.BedHomes
+api-version: '1.21'
+
+commands:
+  beds:
+    description: Open your saved beds
+
+permissions:
+  bedhomes.use:
+    default: true
+  bedhomes.admin:
+    default: op
