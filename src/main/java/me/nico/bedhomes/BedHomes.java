@@ -7,6 +7,8 @@ public class BedHomes extends JavaPlugin {
     @Override
     public void onEnable() {
 
+        DataManager.setup();
+        
         getServer().getPluginManager().registerEvents(
                 new SleepListener(),
                 this
