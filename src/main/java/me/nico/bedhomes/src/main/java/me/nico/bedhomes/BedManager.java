@@ -11,6 +11,13 @@ public class BedManager {
         beds.putIfAbsent(uuid, new ArrayList<>());
 
         beds.get(uuid).add(bed);
+
+        DataManager.getData().set(
+                uuid.toString() + "." + bed.getName(),
+                bed.getLocation()
+        );
+
+        DataManager.save();
     }
 
     public static ArrayList<BedData> getBeds(UUID uuid) {
